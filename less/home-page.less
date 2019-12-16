@@ -2,10 +2,40 @@
 
 .home {
 
+
+
+
   .intro {
+     
+    
+    .main-img{
+      display: flex;
+      
+
+      @media @phone {
+        border-radius: 1rem;
+        width: 100%;
+      }
+      @media @desk {
+        width: 90%;
+        border-radius: 1rem;
+        margin: 0% 4% 2% 4%;
+      }
+
+      
+    }
+    
+    @media @desk{
+      h2,
+      p {
+        .margi();
+      }
+    }
 
     h2 {
       padding: 15px;
+
+      
     }
 
     p {
@@ -13,11 +43,32 @@
     }
   
   }
+  @media @desk {
+    
+  }
+  
 
   .space-images {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+
+    @media @desk{
+      width: 89%;
+      margin-left: 6%;
+    }
+
+    @media @phone{
+      .sky,
+      .launch {
+        display: none;
+      }
+      .blast {
+        width: 95%;
+      }
+    }
+
+    
 
     img {
       width: 28%;
@@ -25,10 +76,17 @@
       border-radius: 20px;
       height: 100%;
     }
+
+    
+   
   }
 
   .visit-planets {
     padding: 15px;
+
+    @media @desk {
+      .margi();
+    }
 
     h3 {
       margin-top: 11px;
@@ -46,8 +104,27 @@
     display: flex;
     justify-content: center;
 
+    
+    @media @phone {
+      display: flex;
+      flex-direction: column-reverse;
+      width: 100%;
+      padding: 0%;
+      margin-left: 2%;
+       
+    }
+
     .walk-text {
       width: 50%;
+
+      @media @phone {
+        margin-top: 5%;
+        width: 100%;
+        
+       
+      
+      }
+
 
       h3 {
         margin-bottom: 10px;
@@ -58,18 +135,54 @@
       }
 
       .btn {
+        display: flex;
+        justify-content: center;
+
+
+        @media @desk {
+          background-color: @nav-font;
+          color: white;
+          font-size: 1.9rem;
+          padding: 5px 0;
+          border: 1px @main-border-color;
+          border-radius: 10px;
+          width: 30%;
+
+        }
+
+        @media @phone {
+          background-color: @nav-font;
+          color: white;
+          font-size: 1.8rem;
+          padding: 20px 0;
+          border: 1px @main-border-color;
+          border-radius: 10px;
+          margin-right: 2%;
+
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+
+      @media @phone {
+        width: 95%;
+        margin: 5% 0 0 0;
+  
+    
+      }
       
+    
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
       }
     }
+
+
   }
 }// home

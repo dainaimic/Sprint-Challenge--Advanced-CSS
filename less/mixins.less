@@ -1,14 +1,23 @@
 // Mixins Here
 
-.displayflex(@jus, @man){
+.displayflex(@jus, @wei){
     display: flex;
     justify-content: @jus;
-    align-content: @man;
+    font-weight: @wei;
 
 }
 
 .margi{
     margin: 0% 6% 0% 6%;
+}
+
+.borr(@wid, @mar) {
+    width: @wid;
+    margin: @mar;
+}
+
+.displayf{
+    display: flex;
 }
 
 

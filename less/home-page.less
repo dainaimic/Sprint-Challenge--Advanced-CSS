@@ -1,6 +1,7 @@
 // Home Content
 
 .home {
+  
 
 
 
@@ -9,7 +10,7 @@
      
     
     .main-img{
-      display: flex;
+      .displayf();
       
 
       @media @phone {
@@ -43,9 +44,7 @@
     }
   
   }
-  @media @desk {
-    
-  }
+ 
   
 
   .space-images {
@@ -56,6 +55,7 @@
     @media @desk{
       width: 89%;
       margin-left: 6%;
+      
     }
 
     @media @phone{
@@ -101,12 +101,11 @@
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    display: flex;
-    justify-content: center;
+    .displayflex(center);
 
     
     @media @phone {
-      display: flex;
+      .displayf();
       flex-direction: column-reverse;
       width: 100%;
       padding: 0%;
@@ -135,18 +134,24 @@
       }
 
       .btn {
-        display: flex;
-        justify-content: center;
+        .displayflex(center, bold);
+        background-color: @nav-font;
+        color: @main-border-color;
+         &:hover {
+          background-color: orange;
+          color: black;
+        }
+        
+      
 
+       
 
         @media @desk {
-          background-color: @nav-font;
-          color: white;
           font-size: 1.9rem;
           padding: 5px 0;
           border: 1px @main-border-color;
           border-radius: 10px;
-          width: 30%;
+          width: 30%; 
 
         }
 
@@ -159,6 +164,8 @@
           border-radius: 10px;
           margin-right: 2%;
 
+          
+
         }
       }
     }
@@ -169,8 +176,7 @@
 
 
       @media @phone {
-        width: 95%;
-        margin: 5% 0 0 0;
+       .borr(95%, 5% 0 0 0);
   
     
       }
@@ -185,4 +191,4 @@
 
 
   }
-}// home
+} // home

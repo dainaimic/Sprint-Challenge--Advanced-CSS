@@ -1,6 +1,9 @@
 .margi {
   margin: 0% 6% 0% 6%;
 }
+.displayf {
+  display: flex;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -163,23 +166,46 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-nav {
-  background-color: #F6F6F6;
-  font-family: #454A59;
-  padding-bottom: 2rem;
-  text-align: center;
+@media (min-width: 700px) {
+  nav {
+    background-color: #F6F6F6;
+    font-family: #454A59;
+    padding-bottom: 2rem;
+    text-align: center;
+    margin: 0% 5% 0 5%;
+  }
+  nav h1 {
+    font-size: 4rem;
+    margin-bottom: 2%;
+    padding-top: 1.1rem;
+  }
+  nav a {
+    text-decoration: none;
+    font-family: #454A59;
+    font-size: 1.5rem;
+    margin: 1.6rem;
+    color: black;
+  }
 }
-nav h1 {
-  font-size: 4rem;
-  margin-bottom: 3%;
-  padding-top: 1.1rem;
-}
-nav a {
-  text-decoration: none;
-  font-family: #454A59;
-  font-size: 1.5rem;
-  margin: 1.6rem;
-  color: black;
+@media (max-width: 500px) {
+  nav {
+    background-color: #F6F6F6;
+    font-family: #454A59;
+    padding-bottom: 2rem;
+    text-align: center;
+  }
+  nav h1 {
+    font-size: 4rem;
+    margin-bottom: 3%;
+    padding-top: 1.1rem;
+  }
+  nav a {
+    text-decoration: none;
+    font-family: #454A59;
+    font-size: 1.5rem;
+    margin: 1.6rem;
+    color: black;
+  }
 }
 footer {
   color: #22283B;
@@ -228,6 +254,9 @@ footer {
   .home .space-images {
     width: 89%;
     margin-left: 6%;
+  }
+  .home .space-images .launch {
+    margin-left: 0%;
   }
 }
 @media (max-width: 500px) {
@@ -293,11 +322,16 @@ footer {
 .home .walk .walk-text .btn {
   display: flex;
   justify-content: center;
+  background-color: #454A59;
+  color: #dee2e6;
+  font-weight: bold;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: orange;
+  color: black;
 }
 @media (min-width: 700px) {
   .home .walk .walk-text .btn {
-    background-color: #454A59;
-    color: white;
     font-size: 1.9rem;
     padding: 5px 0;
     border: 1px #dee2e6;
